@@ -5,7 +5,7 @@
 #include "other/notifications.hpp"
 #include <thread>
 
-// LPA-RBX Process Inspector | v2 | I have put amount of focus into this version, Expect much better performance and stability compared to v1.
+// LPA-RBX Process Inspector | v2 | I have put amount of focus into this version expect beter logic  compared to v1.
 
 bool attached = false;
 bool lastStateInGame = false;
@@ -61,7 +61,7 @@ int main() {
 
         if (!memory::proc.valid()) {
             attached = false;
-            notifications::show(L"Roblox", L"Lost connection — reattaching");
+            notifications::show(L"Roblox", L"Lost connection â€” reattaching");
             continue;
         }
 
